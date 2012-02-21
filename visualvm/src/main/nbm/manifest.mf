@@ -1,0 +1,3 @@
+Manifest-Version: 1.0
+OpenIDE-Module-Localizing-Bundle: gov/usgs/cida/jmx/Bundle.properties
+OpenIDE-Module-Layer: gov/usgs/cida/jmx/layer.xml

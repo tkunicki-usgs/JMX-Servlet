@@ -1,0 +1,11 @@
+
+Build then drop the war into your container and access JMX from a client with one of:
+
+ service:jmx:burlap://<hostname>:<port>/jmx/burlap (XML based protocol)
+ service:jmx:hessian://<hostname>:<port>/jmx/hessian (binary protocol)
+
+Access points are authenticated using the tomcat manager credentials.
+
+Communication is *not* encrypted.  Be careful with connections over insecure/public networks.
+
+You must have the mx4j-tools (3.0.1) and hessian (3.0.8) jars in the classpath of your JMX client.  The associated visualvm project will build a module (.nbm) to install the required jars into VisualVM to access the JMX service endpoints.
