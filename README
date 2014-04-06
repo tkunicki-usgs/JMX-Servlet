@@ -1,4 +1,6 @@
 
+This project implements a JMX endpoint as a servlet for easy-to-configure access to a running servlet container. An additional module generates a VisualVM extension module providing the requierd jars on the classpath if one intends to use VisualVM as the JMX client.
+
 Build then drop the war into your container and access JMX from a client with one of:
 
  service:jmx:burlap://<hostname>:<port>/jmx/burlap (XML based protocol)
@@ -6,6 +8,6 @@ Build then drop the war into your container and access JMX from a client with on
 
 Access points are authenticated using the tomcat manager credentials.
 
-Communication is *not* encrypted.  Be careful with connections over insecure/public networks.
+Communication *may not be encrypted* depending on your container configuration and how you access the endpoint.  Be careful with connections over insecure/public networks.
 
 You must have the mx4j-tools (3.0.1) and hessian (3.0.8) jars in the classpath of your JMX client.  The associated visualvm project will build a module (.nbm) to install the required jars into VisualVM to access the JMX service endpoints.
