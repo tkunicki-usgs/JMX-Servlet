@@ -26,7 +26,7 @@
             <url-pattern>/*</url-pattern>
         </web-resource-collection>
         <auth-constraint>
-            <role-name>manager</role-name>
+            <role-name>manager-script</role-name>
         </auth-constraint>
     </security-constraint>
 </web-app>
